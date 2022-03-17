@@ -41,3 +41,17 @@ Loop controller defines the number of time to execute any samples or listeners.
 3) Starting recording in different recording controller
 4) starting scenario recording
 5) stopped recording and saved
+
+
+############### simple controller, module controller, test fragment, include controller ################
+
+simple controller: normal controller to contain normal sampler.
+
+module controller: it contains simple controller if a specific samplers needs to be executed before
+any samplers.
+
+test fragment: alternative of simple controller.
+
+include controller: Alternative of module controller. No need to contain simple controller. Save the 
+dependent prerequisit samplers as a file format and then browse and include it to the include controller
+and then it will work just like module controller.
