@@ -10,3 +10,17 @@ Elements of jMeter:
 (5) Assertions: Its a process where expected result can be verified with actual result for the request that has been
 sent to the server. Popular assertion that has been used is response assertion. It can be used to add and compare 
 patter strings against one or many values of server response.
+
+Timers in jMeter: 
+jMeter send request without any delay between samplers and listeners.
+It will fail to give realistic results for real world user traffic experience on load and stress testing. 
+
+Two commonly used timer: constant timer and uniform random timer.
+
+(1) Constant timer takes constant delay time for every thread.
+
+(2) In uniform random timer, delay time has been calculated based on two things, random delay max and constant delay offset. 
+Equation to calculate random delay time is:
+-> 0.X * random delay max + constant delay offset. Here, X = 0 to 99.
+
+Some other type of timers are: gaussian random timer, BeanShell timer, BSF timer etc.
