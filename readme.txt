@@ -34,3 +34,10 @@ Multiple type of logic controllers such as :
 If, switch, loop, forEach etc.
 
 Loop controller defines the number of time to execute any samples or listeners.
+
+############# Recording Controller ##############
+1) Adding NonTestElement - http recording
+2) Setting proxy on browser
+3) Starting recording in different recording controller
+4) starting scenario recording
+5) stopped recording and saved
